@@ -29,6 +29,39 @@ grid-template-columns:repeat(3,1fr);
 gap:20px;
 margin-top:20px;
 }
+.navbar{
+background:#003366;
+padding:15px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.navbar .logo{
+color:white;
+font-size:24px;
+font-weight:bold;
+}
+
+.navbar ul{
+display:flex;
+list-style:none;
+margin:0;
+padding:0;
+}
+
+.navbar ul li{
+margin-left:20px;
+}
+
+.navbar ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
 .service {
   background: white;
   margin: 10px;
@@ -50,7 +83,6 @@ footer {
   border-radius: 5px;
 }
 </style>
-</style>
 </head>
 <a href="https://wa.me/919884332136"
 target="_blank"
@@ -69,7 +101,16 @@ z-index:9999;">
 WhatsApp
 </a>
 <body>
-
+<nav class="navbar">
+<div class="logo">Futech Solution</div>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#brands">Brands</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
 <header>
 
 <img src="banner.jpg" style="width:100%; height:auto;">
